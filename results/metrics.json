@@ -1,0 +1,164 @@
+{
+  "data": "Deterministic synthetic byte keys; no external or personal data.",
+  "config": {
+    "power": 13,
+    "slices": 5,
+    "seed": 1729
+  },
+  "payload_bytes": 5120,
+  "probability_scope": "Expected and layout FPR assume ideal independent uniform hash coordinates. Observed fractions describe this fixed workload; no confidence guarantee is asserted.",
+  "capacity": [
+    {
+      "inserted_distinct_keys": 0,
+      "occupancy": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_fpr_ideal_hashes": 0.0,
+      "false_positives": 0,
+      "queries": 40000,
+      "observed_fpr": 0.0,
+      "layout_fpr_ideal_hashes": 0.0,
+      "false_negatives": 0
+    },
+    {
+      "inserted_distinct_keys": 1000,
+      "occupancy": [
+        944,
+        951,
+        948,
+        941,
+        939
+      ],
+      "expected_fpr_ideal_hashes": 2.0044111115255214e-05,
+      "false_positives": 1,
+      "queries": 40000,
+      "observed_fpr": 2.5e-05,
+      "layout_fpr_ideal_hashes": 2.0382917473594706e-05,
+      "false_negatives": 0
+    },
+    {
+      "inserted_distinct_keys": 2000,
+      "occupancy": [
+        1758,
+        1783,
+        1781,
+        1784,
+        1777
+      ],
+      "expected_fpr_ideal_hashes": 0.00047712832453462395,
+      "false_positives": 24,
+      "queries": 40000,
+      "observed_fpr": 0.0006,
+      "layout_fpr_ideal_hashes": 0.0004796966583026376,
+      "false_negatives": 0
+    },
+    {
+      "inserted_distinct_keys": 4000,
+      "occupancy": [
+        3159,
+        3191,
+        3166,
+        3196,
+        3178
+      ],
+      "expected_fpr_ideal_hashes": 0.00860671368868646,
+      "false_positives": 364,
+      "queries": 40000,
+      "observed_fpr": 0.0091,
+      "layout_fpr_ideal_hashes": 0.00878614337582904,
+      "false_negatives": 0
+    },
+    {
+      "inserted_distinct_keys": 6000,
+      "occupancy": [
+        4252,
+        4272,
+        4233,
+        4290,
+        4277
+      ],
+      "expected_fpr_ideal_hashes": 0.037757263336859845,
+      "false_positives": 1520,
+      "queries": 40000,
+      "observed_fpr": 0.038,
+      "layout_fpr_ideal_hashes": 0.03824015048135962,
+      "false_negatives": 0
+    },
+    {
+      "inserted_distinct_keys": 8000,
+      "occupancy": [
+        5086,
+        5127,
+        5072,
+        5122,
+        5114
+      ],
+      "expected_fpr_ideal_hashes": 0.09416730970151463,
+      "false_positives": 3843,
+      "queries": 40000,
+      "observed_fpr": 0.096075,
+      "layout_fpr_ideal_hashes": 0.09390084443381147,
+      "false_negatives": 0
+    },
+    {
+      "inserted_distinct_keys": 12000,
+      "occupancy": [
+        6291,
+        6263,
+        6279,
+        6293,
+        6273
+      ],
+      "expected_fpr_ideal_hashes": 0.2687619857820069,
+      "false_positives": 10527,
+      "queries": 40000,
+      "observed_fpr": 0.263175,
+      "layout_fpr_ideal_hashes": 0.2647133725015729,
+      "false_negatives": 0
+    }
+  ],
+  "union": {
+    "left": {
+      "false_positives": 364,
+      "queries": 40000,
+      "observed_fpr": 0.0091,
+      "layout_fpr_ideal_hashes": 0.00878614337582904
+    },
+    "right": {
+      "false_positives": 340,
+      "queries": 40000,
+      "observed_fpr": 0.0085,
+      "layout_fpr_ideal_hashes": 0.008553105294365454
+    },
+    "merged": {
+      "false_positives": 3843,
+      "queries": 40000,
+      "observed_fpr": 0.096075,
+      "layout_fpr_ideal_hashes": 0.09390084443381147
+    },
+    "equals_direct_build": true,
+    "persisted_bytes": 5166,
+    "retained_inserted_keys": 8000
+  },
+  "deduplication": {
+    "config": {
+      "power": 11,
+      "slices": 5,
+      "seed": 1729
+    },
+    "design_distinct_keys": 1000,
+    "input_events": 5334,
+    "exact_unique_count": 4000,
+    "confirmed_output_count": 4000,
+    "filter_only_output_count": 3418,
+    "lost_unique_keys": 582,
+    "exact_membership_lookups": 1916,
+    "membership_lookups_avoided": 3418,
+    "exact_store_writes": 4000,
+    "scope": "Sequential in-memory exact store retained; lookup counts are not latency or total-memory measurements."
+  }
+}
